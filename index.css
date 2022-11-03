@@ -1,0 +1,10 @@
+#wall_img{
+    /* margin:-0 20%; */
+    max-width:100%;
+}
+
+#wall_parent_div{
+    height:400px;
+    max-width:100%;
+    background-color: red;
+}
