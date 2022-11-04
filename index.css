@@ -1,10 +1,122 @@
-#wall_img{
-    /* margin:-0 20%; */
-    max-width:100%;
+
+	.parallelogram {
+	width: 50%;
+	height: 49vw;
+	transform: skew(-10deg);
+	background: #FFF5;
+	left:5vw	;
+	position: 	relative;
+	background-image: linear-gradient(to bottom right, #FFF9, #000);
 }
 
-#wall_parent_div{
-    height:400px;
-    max-width:100%;
-    background-color: red;
+#monkeypic{
+	background:url('intro.png') no-repeat; height:260px; width: 300px; background-size: 100%; z-index: 100; position: fixed;  top:-20; left:0;
 }
+
+#header{
+    height: 100px; 
+    left:0;
+    position: fixed; 
+    top:0%;
+    width:100%; 
+    background-color: #ffffff; 
+    opacity: 1;
+    font-size:30px;
+    z-index: 20;
+
+}
+
+#footer{
+    height: 50px; 
+    left:0;
+    position: fixed; 
+   	bottom:0%;
+    width:100%; 
+    opacity: 1;
+    font-size:13px;
+    z-index: 20;
+    text-align: center;
+    font-weight:bold;
+    color: white;
+    border-top:3px ridge #fff;
+    background:black;
+
+
+}
+#stomach{
+}
+#face {
+      -webkit-mask-image:-webkit-gradient(linear, right top, right bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+      mask-image: linear-gradient(to right bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+      margin-top:70px;
+    }
+#face2{
+	  /*background-size:100% 100%; */
+}
+
+@media screen and (max-width: 950px){
+	 #face2{
+        	 height: 450px;
+        	 background-height:cover;
+        }
+}
+
+@media screen and (max-width: 500px) {
+        .profile{
+            margin:0;
+            padding: 0;
+        }
+        #monkeypic{
+        	width:200px;
+        	height: 230px
+        }
+        #header{
+        	height:70px;
+        }
+
+         #face2{
+        	 height: 250px;
+        	 background-height:cover;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .profile, .profile input{
+            margin:0;
+            padding: 0;
+            font-size: 12px;
+        }
+        #imageframe{
+           height:150px; width:150px;
+        }
+    }
+    body{
+      background:transparent;
+    }
+
+    #header-content-parent{
+        border-bottom: none; padding: 35px 0px;
+    }
+
+
+
+
+    /* form  contact*/
+    		
+			<style>
+            .my-form {
+                color: #305896;
+            }
+            .my-form .btn-default {
+                background-color: #305896;
+                color: #fff;
+                border-radius: 0;
+            }
+            .my-form .btn-default:hover {
+                background-color: #4498C6;
+                color: #fff;
+            }
+            .my-form .form-control {
+                border-radius: 0;
+            }
+        </style>

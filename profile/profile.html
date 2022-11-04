@@ -1,0 +1,110 @@
+<link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css"> 
+
+    .profile label{
+        font-weight: bold;
+    }
+    #imageframe{
+        border:1px ridge orange;  border-radius:50%; height:300px; width:300px; margin:0 auto;
+    }
+
+    .profile input{
+        border:0; border-bottom: 1px solid black;
+
+    }
+
+    @media screen and (max-width: 500px) {
+        .profile, .profile input{
+            margin:0;
+            padding: 0;
+            font-size: 12px;
+        }
+        #imageframe{
+           height:150px; width:150px;
+        }
+    }
+    body{
+      background:transparent;
+    }
+</style>
+
+ <form class='profile form-group p-2' ><!-- 
+    <div style="background: #fff8; height:1000px; width:100%; position: relative; z-index: 2; top:0; left:0" id="blocker"></div> -->
+  
+      <div class="row mt-3" id= "biobox"style='border:px solid black;'>
+            <div class="col-lg-4 text-center pt-3">
+                <img src="../resume-pic.jpg" style="height:250px" />
+                <div>
+                  <a download href="../resume.pdf"  style="text-decoration:; background:none; padding:0; margin:0"><img src="../background3.jpg" style="height:20px" />Download a copy of my CV</a>
+                </div>
+            </div>
+
+            <!-- <div class="row"> -->
+              
+              <div class=col-lg-8 style="border:1px solid black; color:white; background:#0009;">
+                  <div class="row">
+                    <div class="col-lg-12 h-25 w-100 mb-3" style="border:1px solid black; background:#FFF; color:black">
+                        <h2 class="text-center">BIO</h2>
+                    </div>
+
+                      <div class="col-lg-6">
+                       <div class="row form-group">
+                          <label class="col-lg-3">Name </label>
+                          <div class="col-lg-7">
+                            <input type="text" class=" form-control input-sm letteronly t border- transparent-" id="firstname" style="" placeholder='First Name ' value="Samuel Joseph Pitel" autocomplete="off">
+                          </div>
+                      </div>
+                      
+                      <div class="row form-group">
+                          <label class="col-lg-3">Gender </label>
+                          <div class="col-lg-7">
+                            <input type="text" class=" form-control input-sm letteronly t border- transparent-" id="firstname" style="" placeholder='First Name ' value="Male"  autocomplete="off">
+                          </div>
+                        
+                      </div>
+                      <div class="row form-group">
+                               <label class="col-lg-3">Birthdate </label>
+                              <div class="col-lg-7">
+                                <input type="date" class="form-control input-sm border- transparent-" value="1996-08-04"  placeholder='YYYY-MM-DD' id="birthdate" >
+                              </div>
+                      </div>
+                        <div class="row form-group">
+                               <label class="col-lg-3">Age</label>
+                              <div class="col-lg-7">
+                                <input type="text" class="form-control input-sm border- transparent-" value=""  placeholder='00' id="age" >
+                              </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <h2 class="col-lg-12"></h2>
+                      <div class="row form-group">
+                          <label class="col-lg-3">Current Address </label>
+                           <div class="col-lg-7">
+                            <textarea type="textarea" class="form-control input-sm letteronly txt_firstCapital border- transparent-" id="etc" rows="2" value="" placeholder='House #, Block, Lot, Unit, Bldg.,Floor, etc.' autocomplete="off" ></textarea>
+                          </div>
+                         
+                      </div>
+                      <div class="row form-group" >
+                          <label class="col-lg-3">Contact No</label>
+                          <div class="col-lg-7" style="border-bottom: px solid black; overflow: auto">
+                            <input type="text" class="form-control input-sm p-0 " placeholder='09123456789' id="contact" autocomplete="off" value="09318294202" style="width:65%; display: inline">
+                            <button class="w-25" style="font-size:9px; background: red; color:white; border-radius: 3rem; padding:2px;  display: inline" onclick="copyToClipboard('contact')">Copy to clipboard</button>
+                          </div>
+                      </div>
+                      <div class="row form-group" >
+                          <label class="col-lg-3">Email Address</label>
+                          <div class="col-lg-7" style="border-bottom: px solid black; overflow: auto">
+                            <input type="text" class="form-control input-sm p-0" placeholder='09123456789' id="email" autocomplete="off" value="dao.davon.au@gmail.com" style="width:65%; display: inline">
+                            <button class="w-25" style="font-size:9px; background: red; color:white; border-radius: 3rem; padding:2px;  display: inline" onclick="copyToClipboard('email')">Copy to clipboard</button>
+                          </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                <!-- </div> -->
+          </div>
+    </div>
+
+</form>
+

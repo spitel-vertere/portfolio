@@ -1,35 +1,316 @@
-<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Sjay's Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="./index.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Tell the browser to be responsive to screen width -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Sjay Pits">
+
+	<title>Test Tickles</title>
+	<link rel="stylesheet" href="./index.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/queries.css">
+	<!-- Favicon icon -->
+	<link rel="icon" type="image/png" sizes="16x16" href="intro.png">
 </head>
-<body class="bg-dark justify-content-center">
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                <div class="navbar-nav nav-pills">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">About Me</a>
-                    <a class="nav-link" href="#">Projects</a>
-                    <a class="nav-link disabled">Contact Me</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    
-    <main class="col-12 col-lg-10 offset-lg-1 bg-primary">
-        <div class="w-100 border border-danger" id="wall_parent_div">
-            <img src="./images/pic.jpg" alt="" class="img-fluid" id="wall_img">
-        </div>
-        
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-</body>
+
+	
+	<div id="monkeypic"></div>	
+	<div id= "header"></div>
+	
+	<section class="navigation fixed">
+		<header style="" id="header-content-parent">
+			<div class="header-content">
+				<div class="logo"><a href="#"><img src="coconutnut.png"  style="height:20px; " alt="coconutnut logo"></a></div>
+				<div class="header-nav">
+					<nav>
+						<ul class="primary-nav">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#aboutme">About Me</a></li>
+							<li><a href="#projects-content">Projects</a></li>
+							<li><a href="#contact-form">Contact</a></li>
+						</ul>
+						<ul class="member-actions" style="top: 26px;  ">
+							<li><a href="https://facebook.com/sjay04" ><span style="background:url('icon/tt.png') no-repeat white;  border:1px solid white;"></span></a></li>
+							<li><a href="https://facebook.com/sjay04" ><span style="background:url('icon/fb.png') no-repeat white;  border:1px solid white;"></span></a></li>
+							<li><a href="https://facebook.com/sjay04" ><span style="background:url('icon/ig.png') no-repeat white;  border:1px solid white;"></span></a></li>
+							<li><a href="https://facebook.com/sjay04" ><span style="background:url('icon/yt.png') no-repeat white;  border:1px solid white;"></span></a></li>
+							<!-- <li><a href="https://youtube.com" class="btn-white btn-small">Sign up</a></li> -->
+						</ul>
+						<ul id="cocologo" style="position:absolute; left:90%; top:34px;">
+							<img src="coconutnut.png"  style="height:40px; " alt="coconutnut logo">
+							<li style="color:white; font-size:15px">Test Tickles</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="navicon" style="top: 34px;">
+					<a class="nav-toggle" href="#"><span></span></a>
+				</div>
+			</div>
+		</header>
+	</section>
+	
+	<body id="home" style="background-image: linear-gradient(to bottom right, #000, #850, #310, #000);" class="container-fluid">
+		<div id="face" style= "background:url('intro_bg.jpg') no-repeat; width: 100%; background-size: 100%; opacity:0.95;">
+			<div class="parallelogram" style="text-align:center; color:white; ">
+				<label style="font-weight:bold; padding:0; margin:0; padding-top: 40%">
+					<span style="padding:0; margin:0; font-size: 8vw; width:100%; border:px solid black;">SJAY PITS</span>
+					
+					<span style="font-size: 3vw; width:100%">Software Developer</span>
+				</label>
+			</div>
+		</div>
+		
+		
+		<div id="aboutme" class="container-fluid" style=" width: 100%;  background:url('code.png') no-repeat; background-size: cover; border:none; ">
+			<form class='profile form-group p-2' ><!-- 
+				<div style="background: #fff8; height:1000px; width:100%; position: relative; z-index: 2; top:0; left:0" id="blocker"></div> -->
+				
+				<div class="row mt-3 justify-content-center" id= "biobox"style='border:px solid black;'>
+					<div class="col-lg-4 text-center pt-3">
+						<img src="resume-pic.jpg" style="height:250px" />
+						<div>
+							<a download href="resume.pdf"  style="text-decoration:; background:none; padding:0; margin:0"><img src="background3.jpg" style="height:20px" />Download a copy of my CV</a>
+						</div>
+					</div>
+					
+					<!-- <div class="row"> -->
+						
+						<div class="col-md-8"style="border:1px solid black; color:white; background:#0009;">
+							<div class="row">
+								<div class="col-lg-12 h-25 w-100 mb-3" style="border:1px solid black; background:#FFF; color:black">
+									<h2 class="text-center">BIO</h2>
+								</div>
+								
+								<div class="col-lg-6">
+									<div class="row form-group">
+										<label class="col-lg-3">Name </label>
+										<div class="col-lg-7">
+											<input type="text" class=" form-control input-sm letteronly t border- transparent-" id="firstname" style="" placeholder='First Name ' value="Samuel Joseph Pitel" autocomplete="off">
+										</div>
+									</div>
+									
+									<div class="row form-group">
+										<label class="col-lg-3">Gender </label>
+										<div class="col-lg-7">
+											<input type="text" class=" form-control input-sm letteronly t border- transparent-" id="firstname" style="" placeholder='First Name ' value="Male"  autocomplete="off">
+										</div>
+										
+									</div>
+									<div class="row form-group">
+										<label class="col-lg-3">Birthdate </label>
+										<div class="col-lg-7">
+											<input type="date" class="form-control input-sm border- transparent-" value="1996-08-04"  placeholder='YYYY-MM-DD' id="birthdate" >
+										</div>
+									</div>
+									<div class="row form-group">
+										<label class="col-lg-3">Age</label>
+										<div class="col-lg-7">
+											<input type="text" class="form-control input-sm border- transparent-" value=""  placeholder='00' id="age" >
+										</div>
+									</div>
+									<div class="row form-group">
+										<label class="col-lg-3">Height</label>
+										<div class="col-lg-7">
+											<input type="text" class="form-control input-sm border- transparent-" value=""  placeholder='5ft 7in' id="height" >
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<h2 class="col-lg-12"></h2>
+									<div class="row form-group">
+										<label class="col-lg-3">Current Address </label>
+										<div class="col-lg-7">
+											<textarea type="textarea" class="form-control input-sm letteronly txt_firstCapital border- transparent-" id="etc" rows="3" value="" placeholder='House #, Block, Lot, Unit, Bldg.,Floor, etc.' 
+											autocomplete="off" >Block 30 Lot 13 Phase 2 Ciudad Adelina II, Luciano, Trece Martires, Cavite
+											</textarea>
+										</div>
+										
+									</div>
+									<div class="row form-group" >
+										<label class="col-lg-3">Contact No</label>
+										<div class="col-lg-7" style="border-bottom: px solid black; overflow: auto">
+											<input type="text" class="form-control input-sm p-0 " placeholder='09123456789' id="contact" autocomplete="off" value="09318294202" style="width:65%; display: inline">
+											<button class="w-25" style="font-size:9px; background: red; color:white; border-radius: 3rem; padding:2px;  display: inline" onclick="copyToClipboard('contact')">Copy to clipboard</button>
+										</div>
+									</div>
+									<div class="row form-group" >
+										<label class="col-lg-3">Email Address</label>
+										<div class="col-lg-7" style="border-bottom: px solid black; overflow: auto">
+											<input type="text" class="form-control input-sm p-0" placeholder='09123456789' id="email" autocomplete="off" value="dao.davon.au@gmail.com" style="width:65%; display: inline">
+											<button class="w-25" style="font-size:9px; background: red; color:white; border-radius: 3rem; padding:2px;  display: inline" onclick="copyToClipboard('email')">Copy to clipboard</button>
+										</div>
+									</div>
+									
+									
+								</div>
+							</div>
+							<!-- </div> -->
+						</div>
+					</div>
+					
+				</form>
+				
+			</div>
+			
+			<div id="face2" style= "background:url('pogi.png') no-repeat; opacity:0.95;">
+				<div style="height:100%; width:100%; border:px solid yellow; background-image: linear-gradient(to right, #0002, #000);">
+					<label style="font-size:9vw; color:white; text-shadow: 3vw 3vw 4vw black;font-family: Impact; text-align:  left; width:100%; padding-left:40%; padding-top:5%">Idea</label>
+					<label style="font-size:9vw; color:white; text-shadow: 3vw 3vw 4vw black;font-family: Impact; text-align: left; width:100%; padding-left:40%;">Innovation</label>
+					<label style="font-size:9vw; color:white; text-shadow: 3vw 3vw 4vw black;font-family: Impact; text-align:  left; width:100%; padding-left:40%;">Integration</label>
+				</div>
+			</div>
+			
+			<div style="height:; width:100%; background-image:linear-gradient(to bottom, #FFF0, #FFFc, #FFFd, #FFF, #FFF0); text-align: center;">
+				<label style="font-size:50px; color:black; text-shadow: 2vw 2vw 3vw white;font-family: Impact; text-align: center; width:100%; padding-top:1%">Mission</label>
+				<label style="font-size:1rem; color:black; text-shadow: 2vw 2vw 3vw white;font-family: ; text-align: center; width:70%; padding-bottom: 1%">Through my expertise, I would be able to take part for the exponential technology advances. By providing clients satisfaction and nurturing their confidence with regards to products or services that they demand. Surpassing clients expectations </label>
+				
+			</div>
+			
+			<div id="" style="height:; width:100%; background-image:linear-gradient(to bottom, #0005, #000c, #000d, #000, #0005); text-align: center;" class="mb-5">
+				<label style="font-size:50px; color:white; text-shadow: 2vw 2vw 3vw black;font-family: Impact; text-align: center; width:100%; padding-top:1%">Vision</label>
+				<label style="font-size:1rem; color:white; text-shadow: 2vw 2vw 3vw black;font-family: ; text-align: center; width:70%; padding-bottom: 1%">A world where technology travels throughout the space; where human efforts are made at ease, where global crises are no longer a threat to humanity </label>
+				
+			</div>
+			
+			
+			<!-- <div style="background:white; height:100px; color:black">
+				<iframe width="420" height="315"
+				src="https://www.youtube.com/watch?v=tn-xzF39C2I">
+			</iframe>-->
+
+			<div id="projects-content" class="container-fluid justify-content-center">
+				<div id="" style="height:; width:100%; background-image:linear-gradient(to bottom, #0005, #000c, #000d, #000, #0005); text-align: center;" class="mb">
+					<label style="font-size:50px; color:white; text-shadow: 2vw 2vw 3vw black;font-family: Impact; text-align: center; width:100%; padding-top:1%">Projects</label>
+				</div>
+				<div class="row p-md-1 mt-0 justify-content-center d-lg-flex mb-5">
+					<!-- Card 1 start -->
+					<div class="card col-xl-4 mb-5 mb-xl-0 me-xl-5" style="width: 18rem;">
+						<img src="./images/mychoa.png" alt="" class="card-image-top">
+						<div class="card-body">
+						  <h5 class="card-title text-center "><strong>MYCHOA</strong> </h5>
+						  <h6 class="card-subtitle mb-2 text-muted text-center">My City Hall Online Assistant</h6>
+						  <p class="card-text text-justify">MYCHOA is a web based application designed to digitalized the processes of papers in City Hall. Papers such as Cedula, Birth Certificate, Business Permit, and others can avail with the 
+							use of this application. The payment is also included in the process plus the shipment option.
+						  </p>
+						  <a href="mychoa.com" target="_blank" class="card-link d-block">Visit mychoa.com</a>
+						  <a href="https://drive.google.com/file/d/175UAGLdT8Y2rg6DLQLj17HdcYH-4YX7N/view?usp=share_link" target="_blank" class="card-link d-block">Watch a Video Clip</a>
+						</div>
+					  </div>
+					  <!-- Card 1 End -->
+					  <!-- Caard 2 Start -->
+					  <div class="card bg-dark col-xl-4 mb-5 mb-xl-0 me-xl-5" style="width: 18rem;">
+						<img src="./images/fnri.png" alt="" class="card-image-top">
+						<div class="card-body">
+						  <h4 class="card-title text-light text-center"><strong>FNRI-IPS</strong></h4>
+						  <h6 class="card-subtitle mb-2 text-light text- text-center">Food and Nutrition Research Institute - Intellectual Property System</h6>
+						  <p class="card-text text-light text-justify">FNRI - IPS is also a web-based app. It works like an inventory of list of Intellectual Properties that DOST-FNRI has. 
+							However, it also has lots of functionality such as tracking the expiration date, dowloading files and forms for IPS application. Browsing specific IPs in details and more.
+						  </p>
+
+						  <a href="https://drive.google.com/file/d/15gUO2UbuQPLbXMZ7YsaREu7au1x42DSW/view?usp=share_link" target="_blank" class="card-link d-block">Watch a Video Clip</a>
+						  <a href="https://drive.google.com/file/d/1FRdEv9z6XxzXoUhWGJk3ITB7VJqnNiH_/view?usp=share_link" target="_blank" class="card-link d-block">Watch more Video Clip</a>
+						
+						</div>
+					  </div>
+					  <!-- Card 2 End -->
+					  <!-- Carad 3 Start -->
+					  <div class="card  col-xl-4 mb-5 mb-xl-0 me-xl-5" style="width: 18rem;">
+						<img class="img-fluid" src="./images/sjp-pos.png" alt="" class="card-image-top">
+						<div class="card-body">
+							<h5 class="card-title  text-center"><strong>SJP-POS</strong></h5>
+						  <h6 class="card-subtitle mb-2 text-muted  text-center">Samuel Joseph Pitel - Points of Sale</h6>
+						  <p class="card-text text-justify">It's just a simplified Point of Sale System. It shows the software side and obviously follow local standards minimally. It is intended for portfolio.</p>
+						  <a href="https://drive.google.com/file/d/1WbWl2Qb0ftNDS7BAPSKI9Ud5sVAopCVs/view?usp=share_link" target="_blank" class="card-link d-block">Watch a Video Clip</a>
+						</div>
+					  </div>
+				</div>
+			</div>
+			<!-- End of Projects -->
+
+			<!-- Start of Contact Us-->
+			<div id="contact-form" style="height:; width:100%; background-image:linear-gradient(to bottom, #0005, #000c, #000d, #000, #0005); text-align: center;" class="mb-3">
+				<label style="font-size:50px; color:white; text-shadow: 2vw 2vw 3vw black;font-family: Impact; text-align: center; width:100%; padding-top:1%">Contact</label>
+			</div>
+			<div class="container text-light mb-5">
+				<div class="row">
+					<div class="col-md-6  ">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d401.171516772725!2d120.86953828162007!3d14.268991265568946!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd8046dc73f107%3A0xbcb9001a5f9332d7!2s7V99%2BHQQ%2C%20Trece%20Martires%2C%20Cavite!5e0!3m2!1sfil!2sph!4v1667526469765!5m2!1sfil!2sph"
+						  style="border:0; height:45vh; width:100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<br />
+					<div class="col-md-6">
+						<form class="my-form  text-light">
+							<div class="form-group">
+								<label for="form-name">Name</label>
+								<input type="email" class="form-control" id="form-name" placeholder="Name">
+							</div>
+							<div class="form-group">
+								<label for="form-email">Email Address</label>
+								<input type="email" class="form-control" id="form-email" placeholder="Email Address">
+							</div>
+							<div class="form-group">
+								<label for="form-subject">Telephone</label>
+								<input type="text" class="form-control" id="form-subject" placeholder="Subject">
+							</div>
+							<div class="form-group">
+								<label for="form-message">Email your Message</label>
+								<textarea class="form-control" id="form-message" placeholder="Message"></textarea>
+							</div>
+							<button class="btn btn-default" type="submit">Submit</button>                
+						</form>
+					</div>
+				</div>
+			</div>			
+			
+			<!-- End of Contact Us -->
+		</div>
+		
+	</body>
+	
+	<div id= "footer" class="row">
+		
+		<div class="col"  id= "bottom_link" style=" text-align: left; padding-left: 5%">
+			<div class="row">
+				<div class="col-lg-4">
+					<img  href="https://facebook.com/sjay04" style="background:url('icon/tt.png') no-repeat white;  border:1px solid white;" >
+					<img  href="https://facebook.com/sjay04" style="background:url('icon/fb.png') no-repeat white;  border:1px solid white;">
+					<img  href="https://facebook.com/sjay04" style="background:url('icon/ig.png') no-repeat white;  border:1px solid white;">
+					<img href="https://facebook.com/sjay04" style="background:url('icon/yt.png') no-repeat white;  border:1px solid white;">
+				</div>
+				<div class="col-lg-8" style="text-align: center">
+					<span style=" padding-left:25px;" class="col-lg-12 close-footer-sub">(Website/Webbased App &#9679; Android Apps &#9679; Desktop Apps &#9679; Front End &#9679; Back End &#9679; 3D Development)</span>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<div class="col">
+			<div class="row">
+				<div class="col-lg-4">Sjay Pits  <span class="close-footer-sub">&#9679; Samuel Joseph Pitel</span> </div>
+				<div class="col-lg-8">
+					<span class="close-footer-sub" >Software Developer&#9679;  </span>
+					<span class="close-footer-sub"> dao.davon.au@gmail.com &#9679; </span><span>09318294202 </span>
+				</span>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- <aside id="other_features_frame" style="height:800px; width:100%; box-shadow:0 0 5px green; float:left; margin-top:5%">
+	<article id="other_features_title" style='height:5%; width:100%; background:#cfcc; font-size:2.3vw'></article>
+	<iframe src="profile/profile.html" id="other_features_content" style='height:95%; width:100%; background:#adaa'></iframe>
+</aside> -->
+<script src="jquery-3.2.1.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src ="./index.js" ></script>
+
+
 </html>

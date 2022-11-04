@@ -1,0 +1,16 @@
+/* mjkn, */
+
+#wall_img{
+    object-fit: none; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    width: 120%;
+    /* max-height: 250px; */
+    margin-bottom: 1rem;
+}
+
+#wall_parent_div{
+    height:500px;
+    max-width:100%;
+    /* background-image: url('./images/pic.jpg');
+    background-position: center; */
+}
