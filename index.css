@@ -43,15 +43,21 @@
 
 
 }
-#stomach{
-}
+
 #face {
       -webkit-mask-image:-webkit-gradient(linear, right top, right bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
       mask-image: linear-gradient(to right bottom, rgba(0,0,0,1), rgba(0,0,0,0));
       margin-top:70px;
     }
 #face2{
-	  /*background-size:100% 100%; */
+    background:url('pogi.png') no-repeat; opacity:0.95;
+}
+
+#face2_motto{
+    height:100%; width:100%; border:px solid yellow; background-image: linear-gradient(to right, #0002, #000);
+}
+#face2_motto label{
+    font-size:9vw; color:white; text-shadow: 3vw 3vw 4vw black;font-family: Impact; text-align:  left; width:100%; padding-left:40%; padding-top:5%
 }
 
 @media screen and (max-width: 950px){
@@ -117,3 +123,145 @@
     .my-form .form-control {
         border-radius: 0;
     }
+
+
+    /* Navigation */
+    #img_logo{
+        height:20px;
+    }
+
+    .member-actions{
+        top: 26px;
+    }
+    .member-actions{
+        top: 26px;
+    }
+
+    #tt_icon{
+        background:url('icon/tt.png') no-repeat white;  border:1px solid white;
+    }
+
+    #fb_icon{
+        background:url('icon/fb.png') no-repeat white;  border:1px solid white;
+    }
+
+    #ig_icon{
+        background:url('icon/ig.png') no-repeat white;  border:1px solid white;
+    }
+
+    #yt_icon{
+        background:url('icon/yt.png') no-repeat white;  border:1px solid white;
+    }
+
+    #cocologo{
+        position:absolute; left:90%; top:34px;
+    }
+
+    .navicon{
+        top: 34px;
+    }
+
+    #img_cocologo{
+        height:40px;
+    }
+
+    #logo_txt{
+        color:white; font-size:15px;
+    }
+
+    /* body */
+    #home{
+        background-image: linear-gradient(to bottom right, #000, #850, #310, #000);
+    }
+
+    #face{
+        background:url('intro_bg.jpg') no-repeat; width: 100%; background-size: 100%; opacity:0.95;
+    }
+
+    .parallelogram{
+        text-align:center; color:white; 
+    }
+
+    #inside_parallelogram{
+        font-weight:bold; padding:0; margin:0; padding-top: 40%;
+    }
+
+    #fullname_span{
+        padding:0; margin:0; font-size: 8vw; width:100%; border:px solid black;
+    }
+
+    #title_span{
+        font-size: 3vw; width:100%
+    }
+
+    /* aboutme */
+    #aboutme{
+        width: 100%;  background:url('code.png') no-repeat; background-size: cover; border:none;
+    }
+
+    #resume_pic{
+        height:250px
+    }
+
+    #aboutme_form_parent{
+        border:1px solid black; color:white; background:#0009;
+    }
+
+    #inp_contact, #inp_email{
+        width:65%; display: inline;
+    }
+
+    #btn_copy_clipboard{
+        font-size:9px; background: red; color:white; border-radius: 3rem; padding:2px;  display: inline
+    }
+
+    #mission_box{
+        width:100%; background-image:linear-gradient(to bottom, #FFF0, #FFFc, #FFFd, #FFF, #FFF0); text-align: center;
+    }
+    #mission_box_title{
+        font-size:50px; color:black; text-shadow: 2vw 2vw 3vw white;font-family: Impact; text-align: center; width:100%; padding-top:1%
+    }
+
+    #mission_box_info{
+        font-size:1rem; color:black; text-shadow: 2vw 2vw 3vw white;font-family: ; text-align: center; width:70%; padding-bottom: 1%
+    }
+
+    #vision_box{
+        height:; width:100%; background-image:linear-gradient(to bottom, #0005, #000c, #000d, #000, #0005); text-align: center;
+    }
+
+    #vision_box_title{
+        font-size:50px; color:white; text-shadow: 2vw 2vw 3vw black;font-family: Impact; text-align: center; width:100%; padding-top:1%
+    }
+
+    #vision_box_info{
+        font-size:1rem; color:white; text-shadow: 2vw 2vw 3vw black;font-family: ; text-align: center; width:70%; padding-bottom: 1%
+    }
+
+    #projects_head{
+        width:100%; background-image:linear-gradient(to bottom, #0005, #000c, #000d, #000, #0005); text-align: center;
+    }
+    #projects_head label{
+        font-size:50px; color:white; text-shadow: 2vw 2vw 3vw black;font-family: Impact; text-align: center; width:100%; padding-top:1%
+    }
+
+    .card{
+        width: 18rem;
+    }
+
+
+    /* contact form */
+    #contact-form{
+         width:100%; background-image:linear-gradient(to bottom, #0005, #000c, #000d, #000, #0005); text-align: center;
+    }
+
+    #contact-form-title{
+        font-size:50px; color:white; text-shadow: 2vw 2vw 3vw black;font-family: Impact; text-align: center; width:100%; padding-top:1%
+    }
+
+    #googlemap_iframe{
+        height:45vh; width:100%;
+    }
+
+
+    

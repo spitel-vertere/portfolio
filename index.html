@@ -24,9 +24,9 @@
 	<div id= "header"></div>
 	
 	<section class="navigation fixed">
-		<header style="" id="header-content-parent">
+		<header id="header-content-parent">
 			<div class="header-content">
-				<div class="logo"><a href="#"><img src="coconutnut.png"  style="height:20px; " alt="coconutnut logo"></a></div>
+				<div class="logo"><a href="#"><img id="img_logo" src="coconutnut.png"   alt="coconutnut logo"></a></div>
 				<div class="header-nav">
 					<nav>
 						<ul class="primary-nav">
@@ -35,70 +35,67 @@
 							<li><a href="#projects-content">Projects</a></li>
 							<li><a href="#contact-form">Contact</a></li>
 						</ul>
-						<ul class="member-actions" style="top: 26px;  ">
-							<li><a href="https://facebook.com/sjay04" ><span style="background:url('icon/tt.png') no-repeat white;  border:1px solid white;"></span></a></li>
-							<li><a href="https://facebook.com/sjay04" ><span style="background:url('icon/fb.png') no-repeat white;  border:1px solid white;"></span></a></li>
-							<li><a href="https://facebook.com/sjay04" ><span style="background:url('icon/ig.png') no-repeat white;  border:1px solid white;"></span></a></li>
-							<li><a href="https://facebook.com/sjay04" ><span style="background:url('icon/yt.png') no-repeat white;  border:1px solid white;"></span></a></li>
+						<ul class="member-actions">
+							<li><a href="https://facebook.com/sjay04" ><span id="tt_icon" ></span></a></li>
+							<li><a href="https://facebook.com/sjay04" ><span  id="fb_icon" ></span></a></li>
+							<li><a href="https://facebook.com/sjay04" ><span id="ig_icon"></span></a></li>
+							<li><a href="https://facebook.com/sjay04" ><span id="yt_icon" ></span></a></li>
 							<!-- <li><a href="https://youtube.com" class="btn-white btn-small">Sign up</a></li> -->
 						</ul>
-						<ul id="cocologo" style="position:absolute; left:90%; top:34px;">
-							<img src="coconutnut.png"  style="height:40px; " alt="coconutnut logo">
-							<li style="color:white; font-size:15px">Test Tickles</li>
+						<ul id="cocologo">
+							<img id="img_cocologo" src="coconutnut.png" alt="coconutnut logo">
+							<li id="logo_txt">Test Tickles</li>
 						</ul>
 					</nav>
 				</div>
-				<div class="navicon" style="top: 34px;">
+				<div class="navicon">
 					<a class="nav-toggle" href="#"><span></span></a>
 				</div>
 			</div>
 		</header>
 	</section>
 	
-	<body id="home" style="background-image: linear-gradient(to bottom right, #000, #850, #310, #000);" class="container-fluid">
-		<div id="face" style= "background:url('intro_bg.jpg') no-repeat; width: 100%; background-size: 100%; opacity:0.95;">
-			<div class="parallelogram" style="text-align:center; color:white; ">
-				<label style="font-weight:bold; padding:0; margin:0; padding-top: 40%">
-					<span style="padding:0; margin:0; font-size: 8vw; width:100%; border:px solid black;">SJAY PITS</span>
-					
-					<span style="font-size: 3vw; width:100%">Software Developer</span>
-				</label>
+	<body id="home" class="container-fluid">
+		<div id="face">
+			<div class="parallelogram">
+				<div id="inside_parallelogram">
+					<span id="fullname_span">SJAY PITS</span>
+					<span id="title_span">Software Developer</span>
+				</div>
 			</div>
 		</div>
 		
 		
-		<div id="aboutme" class="container-fluid" style=" width: 100%;  background:url('code.png') no-repeat; background-size: cover; border:none; ">
-			<form class='profile form-group p-2' ><!-- 
-				<div style="background: #fff8; height:1000px; width:100%; position: relative; z-index: 2; top:0; left:0" id="blocker"></div> -->
-				
-				<div class="row mt-3 justify-content-center" id= "biobox"style='border:px solid black;'>
+		<div id="aboutme" class="container-fluid">
+			<form class='profile form-group p-2' >
+				<div class="row mt-3 justify-content-center" id= "aboutmebox" >
 					<div class="col-lg-4 text-center pt-3">
-						<img src="resume-pic.jpg" style="height:250px" />
+						<img src="./resume-pic.JPG" id="resume_pic" />
 						<div>
-							<a download href="resume.pdf"  style="text-decoration:; background:none; padding:0; margin:0"><img src="background3.jpg" style="height:20px" />Download a copy of my CV</a>
+							<a download href="./resume.pdf">Download a copy of my CV</a>
 						</div>
 					</div>
 					
 					<!-- <div class="row"> -->
 						
-						<div class="col-md-8"style="border:1px solid black; color:white; background:#0009;">
+						<div id="aboutme_form_parent" class="col-md-8 font-weight-bold">
 							<div class="row">
-								<div class="col-lg-12 h-25 w-100 mb-3" style="border:1px solid black; background:#FFF; color:black">
-									<h2 class="text-center">BIO</h2>
+								<div class="col-lg-12 h-25 w-100 mb-3">
+									<h2 class="text-center text-white bg-dark"><strong>BIO</strong></h2>
 								</div>
 								
 								<div class="col-lg-6">
 									<div class="row form-group">
 										<label class="col-lg-3">Name </label>
 										<div class="col-lg-7">
-											<input type="text" class=" form-control input-sm letteronly t border- transparent-" id="firstname" style="" placeholder='First Name ' value="Samuel Joseph Pitel" autocomplete="off">
+											<input type="text" class=" form-control input-sm letteronly t border- transparent-" id="firstname"  placeholder='First Name ' value="Samuel Joseph Pitel" autocomplete="off">
 										</div>
 									</div>
 									
 									<div class="row form-group">
 										<label class="col-lg-3">Gender </label>
 										<div class="col-lg-7">
-											<input type="text" class=" form-control input-sm letteronly t border- transparent-" id="firstname" style="" placeholder='First Name ' value="Male"  autocomplete="off">
+											<input type="text" class=" form-control input-sm letteronly t border- transparent-" id="firstname" placeholder='First Name ' value="Male"  autocomplete="off">
 										</div>
 										
 									</div>
@@ -134,16 +131,16 @@
 									</div>
 									<div class="row form-group" >
 										<label class="col-lg-3">Contact No</label>
-										<div class="col-lg-7" style="border-bottom: px solid black; overflow: auto">
-											<input type="text" class="form-control input-sm p-0 " placeholder='09123456789' id="contact" autocomplete="off" value="09318294202" style="width:65%; display: inline">
-											<button class="w-25" style="font-size:9px; background: red; color:white; border-radius: 3rem; padding:2px;  display: inline" onclick="copyToClipboard('contact')">Copy to clipboard</button>
+										<div class="col-lg-7">
+											<input type="text" class="form-control input-sm p-0 " placeholder='09123456789' id="inp_contact" autocomplete="off" value="09318294202">
+											<button class="w-25" id="btn_copy_clipboard" onclick="copyToClipboard('contact')">Copy to clipboard</button>
 										</div>
 									</div>
 									<div class="row form-group" >
 										<label class="col-lg-3">Email Address</label>
-										<div class="col-lg-7" style="border-bottom: px solid black; overflow: auto">
-											<input type="text" class="form-control input-sm p-0" placeholder='09123456789' id="email" autocomplete="off" value="dao.davon.au@gmail.com" style="width:65%; display: inline">
-											<button class="w-25" style="font-size:9px; background: red; color:white; border-radius: 3rem; padding:2px;  display: inline" onclick="copyToClipboard('email')">Copy to clipboard</button>
+										<div class="col-lg-7" >
+											<input type="text" class="form-control input-sm p-0" placeholder='09123456789' id="inp_email" autocomplete="off" value="dao.davon.au@gmail.com" >
+											<button class="w-25" id="btn_copy_clipboard" onclick="copyToClipboard('email')">Copy to clipboard</button>
 										</div>
 									</div>
 									
@@ -158,45 +155,38 @@
 				
 			</div>
 			
-			<div id="face2" style= "background:url('pogi.png') no-repeat; opacity:0.95;">
-				<div style="height:100%; width:100%; border:px solid yellow; background-image: linear-gradient(to right, #0002, #000);">
-					<label style="font-size:9vw; color:white; text-shadow: 3vw 3vw 4vw black;font-family: Impact; text-align:  left; width:100%; padding-left:40%; padding-top:5%">Idea</label>
-					<label style="font-size:9vw; color:white; text-shadow: 3vw 3vw 4vw black;font-family: Impact; text-align: left; width:100%; padding-left:40%;">Innovation</label>
-					<label style="font-size:9vw; color:white; text-shadow: 3vw 3vw 4vw black;font-family: Impact; text-align:  left; width:100%; padding-left:40%;">Integration</label>
+			<div id="face2" >
+				<div id="face2_motto">
+					<label >Idea</label>
+					<label >Innovation</label>
+					<label >Integration</label>
 				</div>
 			</div>
 			
-			<div style="height:; width:100%; background-image:linear-gradient(to bottom, #FFF0, #FFFc, #FFFd, #FFF, #FFF0); text-align: center;">
-				<label style="font-size:50px; color:black; text-shadow: 2vw 2vw 3vw white;font-family: Impact; text-align: center; width:100%; padding-top:1%">Mission</label>
-				<label style="font-size:1rem; color:black; text-shadow: 2vw 2vw 3vw white;font-family: ; text-align: center; width:70%; padding-bottom: 1%">Through my expertise, I would be able to take part for the exponential technology advances. By providing clients satisfaction and nurturing their confidence with regards to products or services that they demand. Surpassing clients expectations </label>
+			<div id="mission_box">
+				<label id="mission_box_title">Mission</label>
+				<label id="mission_box_info">Through my expertise, I would be able to take part for the exponential technology advances. By providing clients satisfaction and nurturing their confidence with regards to products or services that they demand. Surpassing clients expectations </label>
 				
 			</div>
 			
-			<div id="" style="height:; width:100%; background-image:linear-gradient(to bottom, #0005, #000c, #000d, #000, #0005); text-align: center;" class="mb-5">
-				<label style="font-size:50px; color:white; text-shadow: 2vw 2vw 3vw black;font-family: Impact; text-align: center; width:100%; padding-top:1%">Vision</label>
-				<label style="font-size:1rem; color:white; text-shadow: 2vw 2vw 3vw black;font-family: ; text-align: center; width:70%; padding-bottom: 1%">A world where technology travels throughout the space; where human efforts are made at ease, where global crises are no longer a threat to humanity </label>
+			<div id="vision_box" class="mb-5">
+				<label id="vision_box_title">Vision</label>
+				<label id="vision_box_info">A world where technology travels throughout the space; where human efforts are made at ease, where global crises are no longer a threat to humanity </label>
 				
 			</div>
-			
-			
-			<!-- <div style="background:white; height:100px; color:black">
-				<iframe width="420" height="315"
-				src="https://www.youtube.com/watch?v=tn-xzF39C2I">
-			</iframe>-->
 
 			<div id="projects-content" class="container-fluid justify-content-center">
-				<div id="" style="height:; width:100%; background-image:linear-gradient(to bottom, #0005, #000c, #000d, #000, #0005); text-align: center;" class="mb">
-					<label style="font-size:50px; color:white; text-shadow: 2vw 2vw 3vw black;font-family: Impact; text-align: center; width:100%; padding-top:1%">Projects</label>
+				<div id="projects_head" class="mb">
+					<label >Projects</label>
 				</div>
 				<div class="row p-md-1 mt-0 justify-content-center d-lg-flex mb-5">
 					<!-- Card 1 start -->
-					<div class="card col-xl-4 mb-5 mb-xl-0 me-xl-5" style="width: 18rem;">
+					<div class="card col-12 col-xl-4 mb-5 mb-xl-0 me-xl-5" >
 						<img src="./images/mychoa.png" alt="" class="card-image-top">
 						<div class="card-body">
 						  <h5 class="card-title text-center "><strong>MYCHOA</strong> </h5>
 						  <h6 class="card-subtitle mb-2 text-muted text-center">My City Hall Online Assistant</h6>
-						  <p class="card-text text-justify">MYCHOA is a web based application designed to digitalized the processes of papers in City Hall. Papers such as Cedula, Birth Certificate, Business Permit, and others can avail with the 
-							use of this application. The payment is also included in the process plus the shipment option.
+						  <p class="card-text text-justify">MYCHOA is a web based application designed to digitalized the processes of papers in City Hall. Papers such as Cedula, Birth Certificate, Business Permit, and others can avail with the use of this application. The payment is also included in the process plus the shipment option.
 						  </p>
 						  <a href="mychoa.com" target="_blank" class="card-link d-block">Visit mychoa.com</a>
 						  <a href="https://drive.google.com/file/d/175UAGLdT8Y2rg6DLQLj17HdcYH-4YX7N/view?usp=share_link" target="_blank" class="card-link d-block">Watch a Video Clip</a>
@@ -204,7 +194,7 @@
 					  </div>
 					  <!-- Card 1 End -->
 					  <!-- Caard 2 Start -->
-					  <div class="card bg-dark col-xl-4 mb-5 mb-xl-0 me-xl-5" style="width: 18rem;">
+					  <div class="card  col-12 bg-dark col-xl-4 mb-5 mb-xl-0 me-xl-5" >
 						<img src="./images/fnri.png" alt="" class="card-image-top">
 						<div class="card-body">
 						  <h4 class="card-title text-light text-center"><strong>FNRI-IPS</strong></h4>
@@ -220,7 +210,7 @@
 					  </div>
 					  <!-- Card 2 End -->
 					  <!-- Carad 3 Start -->
-					  <div class="card  col-xl-4 mb-5 mb-xl-0 me-xl-5" style="width: 18rem;">
+					  <div class="card col-12 col-xl-4 mb-5 mb-xl-0 me-xl-5" >
 						<img class="img-fluid" src="./images/sjp-pos.png" alt="" class="card-image-top">
 						<div class="card-body">
 							<h5 class="card-title  text-center"><strong>SJP-POS</strong></h5>
@@ -234,14 +224,15 @@
 			<!-- End of Projects -->
 
 			<!-- Start of Contact Us-->
-			<div id="contact-form" style="height:; width:100%; background-image:linear-gradient(to bottom, #0005, #000c, #000d, #000, #0005); text-align: center;" class="mb-3">
-				<label style="font-size:50px; color:white; text-shadow: 2vw 2vw 3vw black;font-family: Impact; text-align: center; width:100%; padding-top:1%">Contact</label>
+			<div id="contact-form" class="mb-3">
+				<label id="contact-form-title">Contact</label>
 			</div>
+
 			<div class="container text-light mb-5">
 				<div class="row">
 					<div class="col-md-6  ">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d401.171516772725!2d120.86953828162007!3d14.268991265568946!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd8046dc73f107%3A0xbcb9001a5f9332d7!2s7V99%2BHQQ%2C%20Trece%20Martires%2C%20Cavite!5e0!3m2!1sfil!2sph!4v1667526469765!5m2!1sfil!2sph"
-						  style="border:0; height:45vh; width:100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						  id="googlemap_iframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 					<br />
 					<div class="col-md-6">
@@ -275,13 +266,13 @@
 	
 	<div id= "footer" class="row">
 		
-		<div class="col"  id= "bottom_link" style=" text-align: left; padding-left: 5%">
+		<div class="col"  id= "bottom_link" >
 			<div class="row">
-				<div class="col-lg-4">
-					<img  href="https://facebook.com/sjay04" style="background:url('icon/tt.png') no-repeat white;  border:1px solid white;" >
-					<img  href="https://facebook.com/sjay04" style="background:url('icon/fb.png') no-repeat white;  border:1px solid white;">
-					<img  href="https://facebook.com/sjay04" style="background:url('icon/ig.png') no-repeat white;  border:1px solid white;">
-					<img href="https://facebook.com/sjay04" style="background:url('icon/yt.png') no-repeat white;  border:1px solid white;">
+				<div class="col-lg-4 d-lg-none">
+					<img  href="https://facebook.com/sjay04"  id="tt_icon" >
+					<img  href="https://facebook.com/sjay04"  id="fb_icon">
+					<img  href="https://facebook.com/sjay04"  id="ig_icon">
+					<img href="https://facebook.com/sjay04"  id="yt_icon">
 				</div>
 				<div class="col-lg-8" style="text-align: center">
 					<span style=" padding-left:25px;" class="col-lg-12 close-footer-sub">(Website/Webbased App &#9679; Android Apps &#9679; Desktop Apps &#9679; Front End &#9679; Back End &#9679; 3D Development)</span>
@@ -293,7 +284,7 @@
 		
 		<div class="col">
 			<div class="row">
-				<div class="col-lg-4">Sjay Pits  <span class="close-footer-sub">&#9679; Samuel Joseph Pitel</span> </div>
+				<div class="col-lg-4 d-sm-none">Sjay Pits  <span class="close-footer-sub">&#9679; Samuel Joseph Pitel</span> </div>
 				<div class="col-lg-8">
 					<span class="close-footer-sub" >Software Developer&#9679;  </span>
 					<span class="close-footer-sub"> dao.davon.au@gmail.com &#9679; </span><span>09318294202 </span>
